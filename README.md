@@ -1,35 +1,44 @@
 # Bibliothèque personnelle
 
-Application Python simple pour gérer une bibliothèque personnelle.
+> Application CLI Python pour gérer une bibliothèque personnelle — bases de la POO, persistance JSON et tests unitaires.
+
+**Statut** : 🟢 Réalisé et validé  
+**Catégorie** : 🐍 Aventure en programmation  
+**Portfolio** : [Profil GitHub](https://github.com/ousmajalloh405-eng)
+
+---
 
 ## Problème métier
 
-Permettre de gérer une collection de livres (ajout, modification, suppression, recherche, tri) avec persistance locale en JSON, sans dépendance externe lourde.
+Permettre à un utilisateur de gérer sa collection personnelle de livres (ajout, modification, suppression, recherche, tri) avec sauvegarde locale simple, sans base de données.
 
 ## Architecture
 
 ```
 src/
-├── models.py      # Classes Livre et Bibliotheque
+├── models.py      # Classes Livre et Bibliotheque (dataclasses)
 ├── storage.py     # Persistance JSON
-└── main.py        # Interface CLI
+└── main.py        # Interface CLI (menu)
 tests/
 ├── test_models.py
 └── test_storage.py
-data/              # Fichier JSON généré à l'exécution
+data/
+└── bibliotheque.json   # Données (exemples inclus)
 ```
 
 ## Technologies
 
-- Python 3.10+
+- **Python 3.10+**
 - Bibliothèque standard : `json`, `dataclasses`, `datetime`, `uuid`, `pathlib`
-- Tests : pytest
+- Tests : `pytest`
 
 ## Installation
 
 ```bash
+git clone https://github.com/ousmajalloh405-eng/bibliotheque-personnelle.git
+cd bibliotheque-personnelle
 python3 -m venv venv
-source venv/bin/activate
+source venv/bin/activate   # Windows : venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
@@ -55,14 +64,20 @@ PYTHONPATH=src python3 src/main.py
 pytest tests/ -v
 ```
 
+**Résultat** : 7 tests passés.
+
 ## Notions travaillées
 
 - Programmation orientée objet (classes, dataclasses)
-- Modules et packages
+- Organisation en modules
 - Persistance JSON
-- Gestion d'erreurs basique
 - Tests unitaires
+- Gestion basique des erreurs
 
 ## Compétences pour le CV
 
-Développement d'une application CLI en Python avec POO, persistance JSON et tests unitaires.
+Développement d'une application CLI en Python avec programmation orientée objet, persistance JSON et tests unitaires.
+
+---
+
+*Projet réalisé dans le cadre de la formation Data — Sonatel Academy.*
