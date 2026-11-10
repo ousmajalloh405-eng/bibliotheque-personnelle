@@ -1,18 +1,10 @@
 [
   {
     "titre": "Clean Code Vol.1",
-    "auteur": "Wes McKinney",
-    "categorie": "Histoire",
-    "annee": 1982,
+    "auteur": "Robert C. Martin",
+    "categorie": "Informatique",
+    "annee": 2008,
     "id": "livre-00000",
     "date_ajout": "2026-01-01T00:00:00"
-  },
-  {
-    "titre": "The Pragmatic Programmer Vol.2",
-    "auteur": "Martin Fowler",
-    "categorie": "Informatique",
-    "annee": 1999,
-    "id": "livre-00001",
-    "date_ajout": "2026-01-02T00:00:00"
   }
 ]
